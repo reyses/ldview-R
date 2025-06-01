@@ -32,7 +32,12 @@ jobs:
         uses: microsoft/setup-msbuild@v2
       - name: Build LDView
         shell: cmd
-        run: .\build.cmd
+        run: |
+          .\build.cmd
+          if not exist Build\Release64\LDView64.exe (
+            echo "Build failed: Missing LDView64.exe"
+            exit 1
+          )
 
   build-windows-2022:
     runs-on: windows-2022
@@ -43,7 +48,12 @@ jobs:
         uses: microsoft/setup-msbuild@v2
       - name: Build LDView
         shell: cmd
-        run: .\build.cmd
+        run: |
+          .\build.cmd
+          if not exist Build\Release64\LDView64.exe (
+            echo "Build failed: Missing LDView64.exe"
+            exit 1
+          )
 
   build-mac:
     runs-on: macos-latest
