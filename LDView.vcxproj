@@ -308,6 +308,8 @@
     <ClCompile Include="TbButtonInfo.cpp" />
     <ClCompile Include="ToolbarStrip.cpp" />
     <ClCompile Include="WinWebClientPlugin.cpp" />
+    <ClCompile Include="BatchConvertDialog.cpp" />
+    <ClCompile Include="BatchStlConverter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ChangeHistory.html" />
