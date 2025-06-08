@@ -501,10 +501,7 @@
 #define ID_FILE_PRINT                   0xE107
 #define ID_VIEW_TOOLBAR                 0xE800
 
-// Next default values for new objects
-// 
-#ifdef APSTUDIO_INVOKED
-#ifndef APSTUDIO_READONLY_SYMBOLS
+// Moved definitions for Batch Convert STL dialog
 #define IDD_BATCH_CONVERT_STL           548 // New Dialog ID
 #define IDC_BATCHSTL_INPUTDIR_LABEL     1325
 #define IDC_EDIT_INPUTDIR               1326
@@ -516,6 +513,11 @@
 #define IDC_BUTTON_STARTBATCH           1332
 // IDC_PROGRESS_BATCH not included as per instructions
 
+
+// Next default values for new objects
+//
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NO_MFC                     1
 #define _APS_3D_CONTROLS                1
 #define _APS_NEXT_RESOURCE_VALUE        549 // Incremented
